@@ -1,0 +1,20 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: frosdot
+Upstream-Contact: team@orcro.co.uk
+Source: https://frosdot.com/
+
+Files: RESOURCES/*
+Copyright: 2023 Orcro Limited
+License: LicenseRef-Orcro-Restricted
+
+Files: DOCUMENTS/*
+Copyright: 2023 Orcro Limited
+License: CC0-1.0 OR MIT
+
+Files: CODE/*
+Copyright: 2023 Orcro Limited
+License: Apache-2.0
+
+Files: README.md
+Copyright: 2023 Orcro Limited
+License: CC-BY-4.0
