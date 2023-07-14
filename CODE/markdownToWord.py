@@ -11,7 +11,7 @@ args = parser.parse_args()
 document = Document()
 
 # Title
-title = re.sub(".txt$", "", args.fileName)
+title = re.sub(".md$", "", args.fileName)
 document.add_heading(title)
 myfile = open(args.fileName).read()
 p = document.add_paragraph(myfile)
