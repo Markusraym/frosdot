@@ -1,6 +1,9 @@
 Acceptable Use Policy
+
 Your use of our website and all associated digital content and services (the "Platform") is subject to this Acceptable Use Policy.  
+
 As a condition of using the Platform, you agree not to use the Platform:
+
 {{Standard_Rules}}
 * in a way that breaches or encourages others to breach any applicable laws.
 * for any fraudulent or other unlawful purpose or activity.
@@ -17,9 +20,13 @@ As a condition of using the Platform, you agree not to use the Platform:
 * to gain unauthorised access to or use of computers, data, systems, accounts or networks.
 * to attempt to circumvent password or user account or authentication methods.
 * {{Add_Rules}}
+
 Additional Content Standards
+
 These additional content standards apply to any content you upload to our website in addition to the rules on use of the Platform set out above.  We have the right to determine, at our reasonable discretion, whether a contribution complies with these content standards.
+
 Your content:
+
 {{Standard_Content}}
 * must be accurate and express genuinely held opinions. 
 * must not promote political activity.
@@ -31,3 +38,4 @@ Your content:
 * must not promote discrimination of race, sex, religion, sexual orientation, age, disability, or nationality. 
 * must not contain any advertising or promote any services or web links to other sites.
 * {{Add_Content}}
+
