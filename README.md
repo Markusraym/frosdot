@@ -2,6 +2,8 @@
 
 # FROSDOT
 
+[![REUSE status](https://api.reuse.software/badge/github.com/galacticalex/frosdot)](https://api.reuse.software/info/github.com/galacticalex/frosdot)
+
 > Free, Open Source, (legal) Document Templates
 
 ## Quick start
