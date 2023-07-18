@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <h1> {{ query.query_text }} </h1>
+
+        <ul>
+
+            {% for choice in query.choice_set.all %}
+            <li>{{ choice.choice_text }}</li>
+            {% endfor %}
+
+        </ul>
+
+    </body>
+</html>
