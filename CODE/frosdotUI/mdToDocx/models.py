@@ -12,8 +12,8 @@ class Query(models.Model):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
 class Response(models.Model):
-    question = models.ForeignKey(Query, on_delete=models.CASCADE)
+    rep = models.ForeignKey(Query, on_delete=models.CASCADE)
     response_text = models.CharField(max_length=200)
     votes = models.IntegerField(default=0)
     def __str__(self):
-        return self.choice_text
+        return self.response_text

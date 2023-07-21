@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+
+        <h1>{{ query.query_text }}</h1>
+
+        <ul>
+            {% for choice in query.response_set.all %}
+            <li>{{ choice.response_text }} -- {{ response.marks }}
+                mark{{ response.votes|pluralize }}</li>
+            {% endfor %}
+        </ul>
+
+        <a href="{% url 'queries:detail' query.id %}">Submit again?</a>
+
+    </body>
+
+</html>
