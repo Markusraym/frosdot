@@ -1,7 +1,9 @@
 # app.R
 
+
 library(shiny)
 library(shinythemes)
+
 
 setwd("clauses")
 clauses = list.files()
@@ -13,6 +15,7 @@ for (c in clauses) {
 }
 setwd("..")
 
+
 ui <- fluidPage(
   theme = shinytheme("paper"),
   # selectInput(inputId = "s", "Files", choice = clauses),
@@ -20,22 +23,38 @@ ui <- fluidPage(
   wellPanel(),
   sidebarLayout(
     sidebarPanel(
-      checkboxGroupInput(inputId = "cb", "Clauses", clauses)
+      checkboxGroupInput(inputId = "cb", "Clauses", clauses),
+      uiOutput(outputId = "form")
     ),
     mainPanel(
       htmlOutput(outputId = "t")
     )
   )
-  # plotOutput(outputId = "hist")
 )
 
+
 server <- function(input, output, session) {
+
+  inputFields <- reactive({
+      #ifs <- list()
+      #for (i in input$cb) {
+      #    ifs[[i]] <- regmatches(input$cb[i], gregexpr("\\{.*?\\}", input$cb[i]))
+      #}
+      #ifs
+      #regmatches(input$cb[3], gregexpr("\\{.*?\\}", input$cb[3]))
+      full <- paste0(clauseTexts[input$cb])
+      unique(unlist(regmatches(full, gregexpr("\\{.*?\\}", full))))
+  })
+
   output$t <- renderText(
     paste(clauseTexts[input$cb], collapse = "</br>")
   )
-  # output$hist <- renderPlot({
-  #   hist(rnorm(input$n))
-  # })
+
+  output$form <- renderUI({
+    mapply(textInput, inputId = inputFields(), label = inputFields())
+  })
+
+
 }
 
 shinyApp(ui = ui, server = server)

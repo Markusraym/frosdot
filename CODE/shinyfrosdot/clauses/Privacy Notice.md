@@ -2,17 +2,17 @@ Privacy Notice
 
 About this privacy notice
 
-We are {{Business_Name}}.  When you access and use this website and any services we offer, we may collect, use, store, share with others and otherwise process certain information which may be used to identify you. This information is commonly referred to as personal data. 
+We are {Business_Name}.  When you access and use this website and any services we offer, we may collect, use, store, share with others and otherwise process certain information which may be used to identify you. This information is commonly referred to as personal data. 
 
 This privacy notice informs you about the purposes and legal basis of our processing of your personal data, as well as how long we store your personal data, who we share it with, and whether and under what circumstances we may transfer your personal data internationally.  This document also sets out the rights you have in respect of your personal data, how you can enforce them and, if necessary, how you can complain about our personal data protection practices.
 
 How to contact us
 
-{{DCO_Exist No}} You may contact us by email at {{General_Email}}, by post at {{Trading_Address}} or by telephone at {{General_Tel}}.
-{{DCO_Exist Yes}} You may contact us about this privacy notice and how we process your personal data by email at {{DCO_Email}}, by post at {{DCO_Address}} or by telephone at {{DCO_Tel}}.
-{{DPO_Exist Yes}} Our Data Protection Officer is {{DPO_Name}}, who can be contacted at {{DPO_Email}}, by post at {{DPO_Address}}, or by telephone at {{DPO_Tel}}.
-{{EURep_Exist Yes}} We have appointed an EU Representative for European data protection matters.  Our EU Representative is {{EURep_Name}}, who can be contacted at {{EURep_Email}}, by post at {{EURep_Address}}, or by telephone at {{EURrep_Tel}}.
-{{UKRep_Exist Yes}} We have appointed an UK Representative for UK data protection matters.  Our UK Representative is {{UKRep_Name}}, who can be contacted at {{UKRep_Email}}, by post at {{UKRep_Address}}, or by telephone at {{UKRep_Tel}}.
+{DCO_Exist No} You may contact us by email at {General_Email}, by post at {Trading_Address} or by telephone at {General_Tel}.
+{DCO_Exist Yes} You may contact us about this privacy notice and how we process your personal data by email at {DCO_Email}, by post at {DCO_Address} or by telephone at {DCO_Tel}.
+{DPO_Exist Yes} Our Data Protection Officer is {DPO_Name}, who can be contacted at {DPO_Email}, by post at {DPO_Address}, or by telephone at {DPO_Tel}.
+{EURep_Exist Yes} We have appointed an EU Representative for European data protection matters.  Our EU Representative is {EURep_Name}, who can be contacted at {EURep_Email}, by post at {EURep_Address}, or by telephone at {EURrep_Tel}.
+{UKRep_Exist Yes} We have appointed an UK Representative for UK data protection matters.  Our UK Representative is {UKRep_Name}, who can be contacted at {UKRep_Email}, by post at {UKRep_Address}, or by telephone at {UKRep_Tel}.
 
 What personal data we collect
 
@@ -20,8 +20,8 @@ The type of personal data we collect depends on how you interact with us.
 
 We may collect the following categories of information about you:
 
-* {{Data_Standard}} 
-* {{Data_Custom}}
+* {Data_Standard} 
+* {Data_Custom}
 
 Why we process your personal data and the legal grounds 
 
@@ -41,16 +41,16 @@ We will use your personal data for the following purposes and on the following l
 
 On the basis of fulfilling our contract with you or to take steps before entering into contract with you at your request, in order to:
 
-* {{Contract_Standard}}
-* {{Contract_Custom}}
+* {Contract_Standard}
+* {Contract_Custom}
 
 To comply with our legal obligations, including:
-* {{LegalO_Standard}}
-* {{LegalO_Custom}}
+* {LegalO_Standard}
+* {LegalO_Custom}
 
 For the purposes of our legitimate interests or those of a third party, we may process your personal information to:
-* {{LegitI_Standard}}
-* {{LegitI_Custom}}
+* {LegitI_Standard}
+* {LegitI_Custom}
 
 Although you may generally access our website and publicly available material about our products without us processing your personal data, we will process your data when you engage with us. We will also always need to process your personal data to enter into a contract with you and to provide our products to you. If you fail to provide the requested personal data to us, we may not be able to enter into a contract with you and provide services to you. 
 
@@ -59,24 +59,24 @@ Who we share your personal data with
 In providing our services to you, we may need to share your personal data with certain third parties listed below. Where this is the case, we only do so where this is required by law, or where we can rely on sufficient safeguards, such as an appropriate data sharing agreement. We will ensure that your personal data is only processed by any third parties for the purposes which it has been collected for and on our instructions.
 
 We regularly share your personal data with third-party service providers whose services we use in providing our products to you. These may include:
-* {{Disclose_Standard}}
-* {{Disclose_Custom}}
+* {Disclose_Standard}
+* {Disclose_Custom}
 
 We may also occasionally share your personal data with our banks, insurers, tax, finance or legal advisors, credit reference agencies, and public, legal and regulatory authorities. We may also occasionally share your personal data with social media companies and our advertising partners.  Finally, we may share your personal data with a potential corporate buyer, i.e. a company acquiring our business or its part, or where our ownership structure changes.
 
-{{Transfer_Safe Yes}} International transfers of your personal data
+{Transfer_Safe Yes} International transfers of your personal data
 
 Where we need to transfer your personal data internationally, we will only do so if we can ensure that your personal data will be granted an appropriate level of protection. If you located in UK or EU this means that we will only do so (i) if the country we are making the transfer to is a country deemed to have an adequate level of protection in place for your personal data, or if there is no adequacy decision, (ii) if there are binding corporate rules in place, or (iii) where we have contractual arrangement with the service provider containing protections for your personal data (the EU Commission or ICO approved Standard Contractual Clauses, for example), or (iv) where the data recipient has adopted an approved code of conduct, or (v) where the data recipient has obtained certification under a certification mechanism that applies appropriate safeguards.
 
 Please contact us if you would like further information about the mechanism used when transferring your personal data out of the EU or UK.
 
-{{Retention_Period Yes}} How long we keep your personal data 
+{Retention_Period Yes} How long we keep your personal data 
 
 We will only keep your personal data for the period of time necessary for the purpose for which we collected your personal data. For example, we will keep your personal data whilst we have an agreement with you or if we have any rights or obligations that will survive termination of the agreement (such as any payment, liability or confidentiality obligations, for example) we may process your personal data even after the agreement we had with you has ended. 
 
 We may also keep certain information about your dealing with us for an indefinite period of time for statistical purposes if we ensure that you cannot be identified such information. Such information will not be personal data. For example, we may retain information about your order date, the products or services purchased, delivery post code, or payment method.
 
-{{DSubrights_Yes}} Your rights
+{DSubrights_Yes} Your rights
 
 Under applicable data protection laws, you have a number of rights as set out below. If you would like to receive further details or would like to exercise any of them, please contact us.
 
@@ -98,7 +98,7 @@ Right to complain: If you have any queries or concerns regarding this privacy no
 
 Right not to be subject to automated decision-making: Where we engage processes that automatically make decisions based on your personal data (such as profiling), we are required to inform you about the logic of such decision-making, as well as about the significance and consequences of the decisions made in this way. Unless such automated decision-making has been authorised by a relevant public authority, or you have given us your consent for it, or it is necessary for entering into or for the performance of a contract between us, you have the right not to be subject to a decision based solely on automated processing of your personal data, including profiling.
 
-{{Cookies_Yes}} Cookies and tracking technologies
+{Cookies_Yes} Cookies and tracking technologies
 
 Our website uses cookies or similar technologies that allow us to monitor visits to our website and our users� interaction with it. Cookies are small files that we store on your computer or mobile phone and that will collect information about your visits to our website and your settings. 
 
