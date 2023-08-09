@@ -1,10 +1,12 @@
 # app.R
 
 
+# Necessary?
 library(shiny)
 library(shinythemes)
 
 
+# Importing locally stored files
 setwd("clauses")
 clauses = list.files()
 clauseTexts = list()
@@ -16,16 +18,23 @@ for (c in clauses) {
 setwd("..")
 
 
+# The shiny web interface (front-end)
 ui <- fluidPage(
+
   theme = shinytheme("paper"),
-  # selectInput(inputId = "s", "Files", choice = clauses),
-  # numericInput(inputId = "n", "Sample size", value = 25),
+
+  # Small bit of design
   wellPanel(),
+
   sidebarLayout(
+
+    # Sidebar contains user input
     sidebarPanel(
       checkboxGroupInput(inputId = "cb", "Clauses", clauses),
       uiOutput(outputId = "form")
     ),
+
+    # Main panel previews clause data
     mainPanel(
       htmlOutput(outputId = "t")
     )
@@ -33,28 +42,31 @@ ui <- fluidPage(
 )
 
 
+# Server code (back-end)
 server <- function(input, output, session) {
 
+  # Gather user-checked clauses reactively
   inputFields <- reactive({
-      #ifs <- list()
-      #for (i in input$cb) {
-      #    ifs[[i]] <- regmatches(input$cb[i], gregexpr("\\{.*?\\}", input$cb[i]))
-      #}
-      #ifs
-      #regmatches(input$cb[3], gregexpr("\\{.*?\\}", input$cb[3]))
       full <- paste0(clauseTexts[input$cb])
       unique(unlist(regmatches(full, gregexpr("\\{.*?\\}", full))))
   })
 
+  # Clause data for previewing
   output$t <- renderText(
     paste(clauseTexts[input$cb], collapse = "</br>")
   )
 
+  # Textbox inputs react to clause selections
   output$form <- renderUI({
-    mapply(textInput, inputId = inputFields(), label = inputFields())
+    # This is scrappy, but avoiding a bug with shiny
+    o = list()
+    for (i in inputFields()) {
+      o[[i]] = textInput(i, i)
+    }
+    o
   })
-
-
 }
 
+# Run the app
 shinyApp(ui = ui, server = server)
+
