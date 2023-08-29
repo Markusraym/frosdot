@@ -2,9 +2,9 @@ Consumer Terms
 
 About us 
 
-We are {{Business_Name}}, registered in {{Country_Incorporation}}.  Our registered address is {{Registered_Address}}.  {{If Trading_Name}} We trade as {{Trading_Name}} and our trading address is {{Trading_Address}}.
+We are {Business_Name}, registered in {Country_Incorporation}.  Our registered address is {Registered_Address}.  {If Trading_Name} We trade as {Trading_Name} and our trading address is {Trading_Address}.
 
-We operate the website {{Website_Address}}.  Our website {{Services.Description}}.  We will refer to our website, its content and our services as the “Platform” in these terms.
+We operate the website {Website_Address}.  Our website {Services.Description}.  We will refer to our website, its content and our services as the “Platform” in these terms.
 
 These terms
 
@@ -100,7 +100,7 @@ If a provision of the contract is held invalid or unenforceable by the court, th
 
 If we do not enforce our rights under the contract we should not be regarded as having waived them. We reserve the right to enforce them later and may do so at our convenience.
 
-If we need to notify you or serve a notice to you we will do so by writing to the address or email address you gave us in your user account. If you need to notify us in writing or serve a notice to us, please send us a letter to our registered office address or email us at {{General_Email}}.
+If we need to notify you or serve a notice to you we will do so by writing to the address or email address you gave us in your user account. If you need to notify us in writing or serve a notice to us, please send us a letter to our registered office address or email us at {General_Email}.
 
-These terms and any contract concluded under them shall be governed by the laws of {{Applicable_Law}}. Each party agrees that the courts of {{Jurisdiction_Law}} shall have the exclusive jurisdiction to settle any dispute or claim arising from or in connection with the contract concluded under these terms. 
+These terms and any contract concluded under them shall be governed by the laws of {Applicable_Law}. Each party agrees that the courts of {Jurisdiction_Law} shall have the exclusive jurisdiction to settle any dispute or claim arising from or in connection with the contract concluded under these terms. 
 

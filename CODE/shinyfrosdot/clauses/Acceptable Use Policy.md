@@ -4,7 +4,7 @@ Your use of our website and all associated digital content and services (the "Pl
 
 As a condition of using the Platform, you agree not to use the Platform:
 
-{{Standard_Rules}}
+{Standard_Rules}
 
 * in a way that breaches or encourages others to breach any applicable laws.
 * for any fraudulent or other unlawful purpose or activity.
@@ -20,7 +20,7 @@ As a condition of using the Platform, you agree not to use the Platform:
 * to misuse any reporting or flagging process, including making false complaints or takedown requests, or otherwise making vexatious, groundless or frivolous complaints or claims.
 * to gain unauthorised access to or use of computers, data, systems, accounts or networks.
 * to attempt to circumvent password or user account or authentication methods.
-* {{Add_Rules}}
+* {Add_Rules}
 
 Additional Content Standards
 
@@ -28,7 +28,7 @@ These additional content standards apply to any content you upload to our websit
 
 Your content:
 
-{{Standard_Content}}
+{Standard_Content}
 
 * must be accurate and express genuinely held opinions. 
 * must not promote political activity.
@@ -39,5 +39,5 @@ Your content:
 * must not abuse, harass, upset or embarrass other users. 
 * must not promote discrimination of race, sex, religion, sexual orientation, age, disability, or nationality. 
 * must not contain any advertising or promote any services or web links to other sites.
-* {{Add_Content}}
+* {Add_Content}
 

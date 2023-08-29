@@ -4,7 +4,7 @@ PLEASE READ THESE TERMS OF USE BEFORE USING OUR WEBSITE. BY USING OUR WEBSITE, Y
 
 Who we are and how to contact us
 
-This website is operated by {{Business_Name}}. If you have any questions about our website you may contact us at {{General_Email}}.
+This website is operated by {Business_Name}. If you have any questions about our website you may contact us at {General_Email}.
 
 These terms
 
@@ -42,9 +42,9 @@ We may provide links to third party websites for information purposes. However, 
 
 Linking to our website
 
-{{Link_To No}} You may not link to our website.
+{Link_To No} You may not link to our website.
 
-{{Link_To Yes}}. You may link your website to our website, but you must do so in a way that does not damage our goodwill and reputation. Your linking to our website does not constitute an endorsement on our part of your website, business or its contents and you must not establish a link in such a way as to suggest any form of association, approval or endorsement. You may not frame our website on any other website.
+{Link_To Yes}. You may link your website to our website, but you must do so in a way that does not damage our goodwill and reputation. Your linking to our website does not constitute an endorsement on our part of your website, business or its contents and you must not establish a link in such a way as to suggest any form of association, approval or endorsement. You may not frame our website on any other website.
 
 We reserve the right at time without notice to require you to remove any link to our website. 
 
@@ -58,5 +58,5 @@ You may not copy, reproduce, modify or use any of the content of the website wit
 
 Law
 
-These terms and conditions are governed by {{Applicable_Law}} and the courts of {{Jurisdiction_Law}}. 
+These terms and conditions are governed by {Applicable_Law} and the courts of {Jurisdiction_Law}. 
 
