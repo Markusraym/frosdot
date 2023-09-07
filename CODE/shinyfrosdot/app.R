@@ -12,7 +12,7 @@ clauses = list.files()
 clauseTexts = list()
 for (c in clauses) {
   con = file(c, open = "r", blocking = T)
-  clauseTexts[[c]] = paste(paste("<h3>", readLines(con, n = 1), "</h3>"), paste(readLines(con), collapse = "</br>"))
+  clauseTexts[[c]] = readLines(con)
   close(con)
 }
 setwd("..")
@@ -23,16 +23,17 @@ ui <- fluidPage(
 
   theme = shinytheme("paper"),
 
-  # Small bit of design
-  wellPanel(),
+  wellPanel(htmlOutput("title")),
 
   sidebarLayout(
 
     # Sidebar contains user input
     sidebarPanel(
+      downloadButton(outputId = "downloadDoc",
+        label = "Export Contract"),
       checkboxGroupInput(inputId = "cb", "Clauses", clauses),
       uiOutput(outputId = "form")
-    ),
+      ),
 
     # Main panel previews clause data
     mainPanel(
@@ -41,19 +42,46 @@ ui <- fluidPage(
   )
 )
 
+previewClause = function(clause) {
+  paste(clause, collapse = "</br>")
+}
+
+exportClause = function(clause) {
+  paste(clause, collapse = "\n")
+}
+
 
 # Server code (back-end)
 server <- function(input, output, session) {
 
+  output$title <- renderText(
+    "<h3>FROSDOT</h3>Free Open Source Document Templates"
+  )
+
   # Gather user-checked clauses reactively
   inputFields <- reactive({
-      full <- paste0(clauseTexts[input$cb])
-      unique(unlist(regmatches(full, gregexpr("\\{.*?\\}", full))))
+    full <- paste0(clauseTexts[input$cb])
+    unique(unlist(regmatches(full, gregexpr("\\{.*?\\}", full))))
   })
 
   # Clause data for previewing
   output$t <- renderText(
-    paste(clauseTexts[input$cb], collapse = "</br>")
+    paste(lapply(clauseTexts[input$cb], previewClause), collapse = "</br>")
+  )
+
+  # Download text
+  outputText = reactive({
+    paste(lapply(clauseTexts[input$cb], exportClause))
+  })
+
+  output$downloadDoc = downloadHandler(
+    filename = "export.txt",
+    # file is required by Shiny.
+    content = function(file) {
+      write(paste0(outputText(),
+          sep = "\n"),
+        file = file)
+    }
   )
 
   # Textbox inputs react to clause selections
