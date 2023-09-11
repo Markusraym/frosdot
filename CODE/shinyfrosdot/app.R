@@ -23,14 +23,15 @@ ui <- fluidPage(
 
   theme = shinytheme("paper"),
 
-  wellPanel(htmlOutput("title")),
+  wellPanel(htmlOutput("title"),
+    htmlOutput("checked")
+    ),
 
   sidebarLayout(
 
     # Sidebar contains user input
     sidebarPanel(
-      downloadButton(outputId = "downloadDoc",
-        label = "Export Contract"),
+      downloadButton(outputId = "downloadDoc", label = "Export Contract"),
       checkboxGroupInput(inputId = "cb", "Clauses", clauses),
       uiOutput(outputId = "form")
       ),
@@ -43,7 +44,7 @@ ui <- fluidPage(
 )
 
 previewClause = function(clause) {
-  paste(clause, collapse = "</br>")
+  full = paste(clause, collapse = "</br>")
 }
 
 exportClause = function(clause) {
@@ -55,7 +56,17 @@ exportClause = function(clause) {
 server <- function(input, output, session) {
 
   output$title <- renderText(
-    "<h3>FROSDOT</h3>Free Open Source Document Templates"
+    "<div><h3>FROSDOT</h3>Free Open Source Document Templates</div>"
+  )
+
+  tt <- function(x) {
+    input[[x]]
+  }
+
+  # WIP - next steps, hook into user input and gsub on l81
+  output$checked <- renderText(
+    paste(lapply(inputFields(), tt))
+    #paste(input[["{P1_Name}"]])
   )
 
   # Gather user-checked clauses reactively
@@ -67,6 +78,7 @@ server <- function(input, output, session) {
   # Clause data for previewing
   output$t <- renderText(
     paste(lapply(clauseTexts[input$cb], previewClause), collapse = "</br>")
+    #gsub here
   )
 
   # Download text
