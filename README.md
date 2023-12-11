@@ -1,3 +1,5 @@
+<center> This initiative has become the Eclipse Foundation project ["Cardinal"](https://gitlab.eclipse.org/eclipsefdn/emo-team/emo/-/issues/649). </center>
+
 ![Frosdot image](RESOURCES/frosdot.png)
 
 # FROSDOT
